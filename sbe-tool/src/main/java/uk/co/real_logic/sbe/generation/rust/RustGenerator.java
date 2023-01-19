@@ -1357,7 +1357,6 @@ public class RustGenerator implements CodeGenerator
         indent(out, 1, "pub struct %s<P> {\n", encoderName);
         indent(out, 2, "parent: Option<P>,\n");
         indent(out, 2, "offset: usize,\n");
-        indent(out, 2, "acting_version: usize,\n");
         indent(out, 1, "}\n\n");
 
         appendImplWriterForComposite(out, 1, encoderName);
